@@ -28,6 +28,13 @@ reading, and sleep/focus modes.
 - `speed=0.05..2`
 - `scale=0.5..5`
 
+For first Plash testing, prefer an explicit speed so the movement is obviously
+alive:
+
+```text
+https://gwbeats85.github.io/cloud-wallpaper/?mode=sunset&ui=0&speed=0.9
+```
+
 ## Plash URL
 
 Use `ui=0` for wallpaper mode.

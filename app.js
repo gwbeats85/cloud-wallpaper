@@ -16,7 +16,7 @@
       sunColor: 0xffbc6d,
       sunGlareColor: 0xffd0a2,
       sunlightColor: 0xffd19a,
-      speed: 0.34,
+      speed: 0.7,
       scale: 2.8
     },
     sunset: {
@@ -28,7 +28,7 @@
       sunColor: 0xff7d35,
       sunGlareColor: 0xff5b2a,
       sunlightColor: 0xffad62,
-      speed: 0.28,
+      speed: 0.62,
       scale: 3.05
     },
     night: {
@@ -40,7 +40,7 @@
       sunColor: 0x9eb5dc,
       sunGlareColor: 0x5f75a5,
       sunlightColor: 0x627da7,
-      speed: 0.2,
+      speed: 0.48,
       scale: 3.2
     },
     sleep: {
@@ -52,7 +52,7 @@
       sunColor: 0x43516f,
       sunGlareColor: 0x28344e,
       sunlightColor: 0x30405f,
-      speed: 0.09,
+      speed: 0.3,
       scale: 3.5
     }
   };
@@ -76,8 +76,8 @@
   function autoMode() {
     const now = new Date();
     const hour = now.getHours() + now.getMinutes() / 60;
-    if (hour >= 21.5 || hour < 5.5) return "sleep";
-    if (hour >= 18 || hour < 7) return "night";
+    if (hour >= 23.5 || hour < 5) return "sleep";
+    if (hour >= 19.5 || hour < 7) return "night";
     if (hour >= 16.5) return "sunset";
     return "morning";
   }

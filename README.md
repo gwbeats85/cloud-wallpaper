@@ -18,10 +18,11 @@ Hide controls for Plash:
 ?mode=auto&ui=0
 ```
 
-Tune motion:
+Tune motion. If Plash looks still, use an explicit speed while testing:
 
 ```text
 ?mode=sunset&speed=0.35&scale=2.8
+?mode=sunset&ui=0&speed=0.9
 ```
 
 ## Local Preview
