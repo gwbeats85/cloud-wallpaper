@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#75b7df">
+    <title>Cloud Wallpaper</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main id="sky" class="sky" data-ui="visible">
+      <div id="clouds" class="clouds" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
+
+      <section class="panel" aria-label="Cloud wallpaper controls">
+        <div>
+          <p class="eyebrow">Cloud Wallpaper</p>
+          <h1 id="modeTitle">Morning</h1>
+        </div>
+
+        <div class="controls">
+          <button type="button" data-mode="morning">Morning</button>
+          <button type="button" data-mode="sunset">Sunset</button>
+          <button type="button" data-mode="night">Night</button>
+          <button type="button" data-mode="sleep">Sleep</button>
+          <button type="button" data-mode="auto">Auto</button>
+        </div>
+
+        <label class="slider-row">
+          <span>Speed</span>
+          <input id="speedInput" type="range" min="0.05" max="2" step="0.05" value="0.35">
+        </label>
+
+        <label class="slider-row">
+          <span>Scale</span>
+          <input id="scaleInput" type="range" min="0.5" max="5" step="0.1" value="2.8">
+        </label>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.clouds.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
